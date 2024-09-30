@@ -1,7 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
 # import sqlite3  # Removed as it is not accessed
-from Controllers.controller import SQLController
+from controllers.controller import SQLController
+
 
 class RegistrationView(ttk.Frame):
 
@@ -10,7 +11,7 @@ class RegistrationView(ttk.Frame):
         self.control = SQLController(RegistrationView)
 
         # make a SQL query here which gets the number of medications and generates a button for each
-        self.cursor = self.control.get_connection().cursor()  # Assuming 'get_connection()' returns a valid connection
+        self.cursor = self.control.connection.cursor()  # Assuming 'connection' is the correct attribute
         self.cursor.execute('''SELECT medication_ID, medication_name FROM Medications''')
         medications = self.cursor.fetchall()
         
