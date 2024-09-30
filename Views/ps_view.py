@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-from Controllers.controller import SQLController
+from Controllers.sql_controller import SQLController
 
 '''
 The 'View' contains all the UI for the software. It can call methods from the 'controller' class 

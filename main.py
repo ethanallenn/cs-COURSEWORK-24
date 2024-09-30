@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import ttk
 from header_config import Header
 from Views.ps_view import PrescriptionSearchView
 from Views.reg_view import RegistrationView
