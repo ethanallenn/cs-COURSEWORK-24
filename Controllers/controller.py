@@ -5,7 +5,7 @@ class SQLController:
     def __init__(self, view=None):
         self.view = view
         # Establish a connection to the 'CallePharmacy.db' database.
-        self.conn = sqlite3.connect("/Users/ethanallen/Documents/A2_CourseworkProject/Programming//Controllers/CallePharmacy.db")
+        self.conn = sqlite3.connect("/Users/ethanallen/Documents/A2_CourseworkProject/Controllers/CallePharmacy.db")
         self.cursor = self.conn.cursor()
     
     def change_day_reg(self, day):
